@@ -1,0 +1,43 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Element selector */
+h1 {
+    color: #1f2937;
+}
+
+/* ID selector */
+#add-expense {
+    background-color: #dbeafe;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Class selector */
+.expenses {
+    background-color: #dcfce7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Element selector */
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 8px 0 15px;
+    box-sizing: border-box;
+}
+
+/* Element selector */
+label {
+    font-weight: bold;
+}
