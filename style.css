@@ -41,3 +41,173 @@ input {
 label {
     font-weight: bold;
 }
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+/* Add Expense Section */
+#add-expense {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Direct child selector */
+#add-expense > form {
+    max-width: 500px;
+}
+
+
+/* Input and Select */
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Negation pseudo-class */
+input:not([type="date"]) {
+    background-color: #fafafa;
+}
+
+
+/* Focus selector */
+input:focus,
+select:focus {
+    outline: 2px solid #4CAF50;
+}
+
+
+/* Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+
+    /* Required by assignment */
+    cursor: pointer;
+}
+
+
+/* Button hover */
+button:hover {
+    background-color: #388E3C;
+}
+
+
+/* Expenses Section */
+.expenses {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+
+    /* Required */
+    border-collapse: collapse;
+}
+
+
+/* Descendant selector */
+.expenses td,
+.expenses th {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Table header */
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Table hover */
+tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+/* Instructions */
+.instructions {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+
+/* Summary */
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Multimedia */
+.multimedia {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+/* Video */
+iframe {
+    max-width: 100%;
+}
+
+
+/* Advanced selector: first row */
+tr:first-child {
+    font-weight: bold;
+}
