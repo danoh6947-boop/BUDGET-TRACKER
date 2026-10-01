@@ -11,7 +11,6 @@
 <body>
 
     <header>
-        <!-- Budget Tracker Logo -->
         <img 
             src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
             alt="Budget Tracker Logo"
@@ -24,51 +23,43 @@
 
     <main>
 
-        <!-- Add Expense Section -->
+        <!-- Add Expense Form -->
         <section id="add-expense">
 
             <h2>Add Expense</h2>
 
             <form>
 
-                <!-- Expense Name -->
                 <label for="expense-name">Expense Name</label>
                 <input 
-                    type="text" 
-                    id="expense-name" 
+                    type="text"
+                    id="expense-name"
                     placeholder="e.g. Groceries"
                 >
 
-                <!-- Expense Amount -->
                 <label for="expense-amount">Amount</label>
                 <input 
-                    type="number" 
-                    id="expense-amount" 
-                    placeholder="e.g. 25.00"
+                    type="number"
+                    id="expense-amount"
+                    placeholder="e.g. 1500"
                 >
 
-                <!-- Expense Category -->
                 <label for="expense-category">Category</label>
 
                 <select id="expense-category">
-
-                    <option value="">Select Category</option>
-                    <option value="food">Food</option>
-                    <option value="transport">Transport</option>
-                    <option value="rent">Rent</option>
-                    <option value="entertainment">Entertainment</option>
-                    <option value="other">Other</option>
-
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
                 </select>
 
-                <!-- Expense Date -->
                 <label for="expense-date">Date</label>
                 <input 
-                    type="date" 
+                    type="date"
                     id="expense-date"
                 >
 
-                <!-- Add Expense Button -->
                 <button type="button">Add Expense</button>
 
             </form>
@@ -76,23 +67,20 @@
         </section>
 
 
-        <!-- Expenses Section -->
+        <!-- Expenses Table -->
         <section class="expenses">
 
             <h2>Your Expenses</h2>
 
-            <!-- Expense Table -->
             <table>
 
                 <thead>
-
                     <tr>
                         <th>Name</th>
                         <th>Amount</th>
                         <th>Category</th>
                         <th>Date</th>
                     </tr>
-
                 </thead>
 
                 <tbody>
@@ -139,7 +127,7 @@
         </section>
 
 
-        <!-- How to Use Section -->
+        <!-- Instructions -->
         <section class="instructions">
 
             <details>
@@ -147,14 +135,9 @@
                 <summary>How to use this tracker</summary>
 
                 <p>
-                    Enter the name of your expense, the amount,
-                    category, and date using the Add Expense form.
-                </p>
-
-                <p>
-                    Click the Add Expense button to submit the expense.
-                    JavaScript will be added in a future assignment
-                    to make the button functional.
+                    Enter the expense name, amount, category, and date.
+                    Then click the Add Expense button.
+                    The table below shows examples of recorded expenses.
                 </p>
 
             </details>
@@ -162,14 +145,10 @@
         </section>
 
 
-        <!-- Multimedia Section -->
+        <!-- Multimedia -->
         <section class="multimedia">
 
-            <h2>Budgeting Tips</h2>
-
-            <p>
-                Watch this video to learn more about managing your budget.
-            </p>
+            <h2>Learn About Budgeting</h2>
 
             <iframe
                 width="560"
