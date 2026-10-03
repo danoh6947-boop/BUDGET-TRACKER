@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Budget Tracker</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <img 
+        <img
             src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
-            alt="Budget Tracker Logo"
+            alt="Budget Tracker logo"
             width="80"
         >
 
@@ -23,57 +22,51 @@
 
     <main>
 
-        <!-- Add Expense Form -->
-        <section id="add-expense">
-
+        <!-- Add Expense Section -->
+        <section class="add-expense-section">
             <h2>Add Expense</h2>
 
             <form>
+                <div>
+                    <label for="expense-name">Expense Name:</label>
+                    <input
+                        type="text"
+                        id="expense-name"
+                        placeholder="Enter expense name"
+                    >
+                </div>
 
-                <label for="expense-name">Expense Name</label>
-                <input 
-                    type="text"
-                    id="expense-name"
-                    placeholder="e.g. Groceries"
-                >
+                <div>
+                    <label for="expense-amount">Amount:</label>
+                    <input
+                        type="number"
+                        id="expense-amount"
+                        placeholder="Enter amount"
+                    >
+                </div>
 
-                <label for="expense-amount">Amount</label>
-                <input 
-                    type="number"
-                    id="expense-amount"
-                    placeholder="e.g. 1500"
-                >
+                <div>
+                    <label for="expense-category">Category:</label>
 
-                <label for="expense-category">Category</label>
-
-                <select id="expense-category">
-                    <option value="Food">Food</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Rent">Rent</option>
-                    <option value="Entertainment">Entertainment</option>
-                    <option value="Other">Other</option>
-                </select>
-
-                <label for="expense-date">Date</label>
-                <input 
-                    type="date"
-                    id="expense-date"
-                >
+                    <select id="expense-category">
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
 
                 <button type="button">Add Expense</button>
-
             </form>
-
         </section>
 
 
-        <!-- Expenses Table -->
-        <section class="expenses">
-
+        <!-- Expenses Section -->
+        <section class="expenses-section">
             <h2>Your Expenses</h2>
 
             <table>
-
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -84,17 +77,16 @@
                 </thead>
 
                 <tbody>
-
                     <tr>
-                        <td>Groceries</td>
-                        <td>KES 1,500</td>
+                        <td>Breakfast</td>
+                        <td>KES 200</td>
                         <td>Food</td>
                         <td>2026-10-01</td>
                     </tr>
 
                     <tr>
                         <td>Bus Fare</td>
-                        <td>KES 200</td>
+                        <td>KES 150</td>
                         <td>Transport</td>
                         <td>2026-10-01</td>
                     </tr>
@@ -103,62 +95,54 @@
                         <td>House Rent</td>
                         <td>KES 5,000</td>
                         <td>Rent</td>
-                        <td>2026-09-30</td>
+                        <td>2026-10-02</td>
                     </tr>
 
                     <tr>
-                        <td>Football</td>
+                        <td>Movie</td>
                         <td>KES 500</td>
                         <td>Entertainment</td>
-                        <td>2026-09-29</td>
+                        <td>2026-10-02</td>
                     </tr>
 
                     <tr>
-                        <td>Airtime</td>
-                        <td>KES 100</td>
+                        <td>Water</td>
+                        <td>KES 300</td>
                         <td>Other</td>
-                        <td>2026-09-28</td>
+                        <td>2026-10-03</td>
                     </tr>
-
                 </tbody>
-
             </table>
-
         </section>
 
 
-        <!-- Instructions -->
+        <!-- How to Use Section -->
         <section class="instructions">
-
             <details>
-
                 <summary>How to use this tracker</summary>
 
                 <p>
-                    Enter the expense name, amount, category, and date.
-                    Then click the Add Expense button.
-                    The table below shows examples of recorded expenses.
+                    Enter the name and amount of your expense,
+                    choose a category, and click the Add Expense button.
+                    The button will become functional when JavaScript
+                    is added in a later week.
                 </p>
-
             </details>
-
         </section>
 
 
-        <!-- Multimedia -->
-        <section class="multimedia">
-
-            <h2>Learn About Budgeting</h2>
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>Budgeting Tips</h2>
 
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/6Ib9U4YJ0oY"
+                src="https://www.youtube.com/embed/4Z5b1lJ1w8k"
                 title="Budgeting Tips Video"
                 frameborder="0"
                 allowfullscreen>
             </iframe>
-
         </section>
 
     </main>
